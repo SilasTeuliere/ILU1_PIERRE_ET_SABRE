@@ -15,7 +15,8 @@ public class Traitre extends Samourai{
 	public void ranconner(Commercant commercant, int rancon) {
 		if (traitrise < 3) {
 			traitrise++;
-			ajouterArgent(commercant.perdreArgent(rancon));
+			commercant.perdreArgent(rancon);
+			ajouterArgent(rancon);
 			parler("Merci d'avoir payer votre dû à moi et mon seigneur "+ getSeigneur() + ".");
 		}
 		else {

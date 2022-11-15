@@ -22,9 +22,8 @@ public class Humain {
         this.argent+=valeur;
     }
     
-    public int perdreArgent(int valeur) {
+    public void perdreArgent(int valeur) {
         this.argent-=valeur;
-        return this.argent;
     }
     
     public void boire() {
