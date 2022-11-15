@@ -18,9 +18,8 @@ public class Humain {
         this.nom = nom;
     }
     
-    public int ajouterArgent(int valeur) {
+    public void ajouterArgent(int valeur) {
         this.argent+=valeur;
-        return this.argent;
     }
     
     public int perdreArgent(int valeur) {
@@ -33,7 +32,7 @@ public class Humain {
     }  
     
     public void direBonjour() {
-        parler("Bonjour ! Je m'appelle " + this.nom + ", j'aime boire du " + this.boisson + " et j'ai " + this.getArgent()+" yens sur moi");
+        parler("Bonjour ! Je m'appelle " + this.nom + ", j'aime boire du " + this.boisson + ".");
     }
     
     
